@@ -4,13 +4,13 @@ module.exports = function(grunt) {
         less: {
             development: {
                 files: {
-                    'main.css': 'main.less'
+                    'main.css': 'src/main.less'
                 }
             },
             production: {
                 options: {},
                 files: {
-                    'main.min.css': 'main.less'
+                    'main.min.css': 'src/main.less'
                 }
             }
         },
@@ -18,7 +18,7 @@ module.exports = function(grunt) {
             target: {
                 files: [{
                     expand: true,
-                    cwd: '.',
+                    cwd: 'src/',
                     src: ['main.css'],
                     dest: 'dist/',
                     ext: '.min.css'
