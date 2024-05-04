@@ -1,75 +1,46 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    background: linear-gradient(135deg, #1a1a1a, #333333);
-    color: #ffffff;
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden;   
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333; /* Cor de fundo cinza escuro */
+    color: white;
+    text-align: center;
+    padding-top: 50px;
 }
 
 .container {
-    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
 }
 
 h2 {
-    margin-top: 0;
-    margin-bottom: 20px;
+    font-size: 24px;
 }
 
 form {
-    display: inline-block;
-    text-align: left;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 input[type="number"],
-input[type="submit"] {
+button {
     padding: 5px 10px;
-    margin-bottom: 10px;
-    border: none;
-    border-radius: 3px;
+    margin: 5px;
+    font-size: 16px;
 }
 
-input[type="submit"] {
+button {
     background-color: #007bff;
-    color: #ffffff;
+    color: white;
+    border: none;
     cursor: pointer;
-    margin-top: 10px;
 }
 
-input[type="submit"]:hover {
+button:hover {
     background-color: #0056b3;
-}
-
-.submit-btn {
-    display: block;
-    margin: 0 auto;
-}
-
-#resultado {
-    margin-top: 10px;
-    padding: 10px;
-    border: 1px dotted transparent;
-    font-size: 1.2em;
-    color: #ffffff;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#resultado.mostrar {
-    border-color: #ffffff;
-    margin-top: 20px;
-    padding: 20px;
-    font-size: 1.5em;
 }
