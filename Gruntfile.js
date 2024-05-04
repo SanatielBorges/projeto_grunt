@@ -8,28 +8,28 @@ module.exports = function(grunt) {
             collapseWhitespace: true
           },
           files: {
-            'dist/index.min.html': 'index.html'
+            './dist/index.min.html': 'index.html'
           }
         }
       },
       less: {
         dist: {
           files: {
-            'dist/main.css': 'src/main.less'
+            './dist/main.css': 'src/main.less'
           }
         }
       },
       cssmin: {
         dist: {
           files: {
-            'dist/main.min.css': 'dist/main.css'
+            './dist/main.min.css': 'dist/main.css'
           }
         }
       },
       uglify: {
         dist: {
           files: {
-            'dist/main.min.js': 'src/main.js'
+            './dist/main.min.js': 'src/main.js'
           }
         }
       }
